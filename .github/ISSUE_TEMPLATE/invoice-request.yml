@@ -1,0 +1,80 @@
+name: PrevailAudit invoice request
+description: Request an invoice for a first-project PrevailAudit payroll audit.
+title: "Invoice request: "
+labels: ["invoice-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this when the $299 first-project audit is ready for invoice or card-payment follow-up. Do not include sensitive payroll data, Social Security numbers, bank details, home addresses, or unredacted worker records in this public issue.
+  - type: input
+    id: company
+    attributes:
+      label: Company
+      description: Legal or operating company name.
+      placeholder: Sample Contractor LLC
+    validations:
+      required: true
+  - type: input
+    id: billing-contact
+    attributes:
+      label: Billing contact role
+      description: Role only; do not publish private billing details.
+      placeholder: Controller
+    validations:
+      required: true
+  - type: input
+    id: project-trigger
+    attributes:
+      label: Project or award trigger
+      description: Project name, public award ID, agency, or payroll packet deadline.
+      placeholder: Bridge repair, VA roof replacement, or award ID
+    validations:
+      required: true
+  - type: dropdown
+    id: payment-path
+    attributes:
+      label: Payment path
+      options:
+        - Card payment link
+        - Hosted invoice
+        - Purchase order needed
+        - Prime or customer approval needed
+    validations:
+      required: true
+  - type: dropdown
+    id: invoice-timing
+    attributes:
+      label: Invoice timing
+      options:
+        - Ready this week
+        - 2-4 weeks
+        - Need one approval step
+    validations:
+      required: true
+  - type: dropdown
+    id: expected-next-fit
+    attributes:
+      label: Expected next fit after the pilot
+      options:
+        - $149/mo subcontractor plan
+        - $499/mo prime oversight
+        - Pilot only
+        - Not sure yet
+    validations:
+      required: true
+  - type: textarea
+    id: invoice-notes
+    attributes:
+      label: Invoice notes
+      description: Mention public procurement constraints or required invoice wording without sensitive payroll or bank details.
+      placeholder: Please reference award ID 123 and one payroll week.
+    validations:
+      required: true
+  - type: checkboxes
+    id: data-handling
+    attributes:
+      label: Data handling acknowledgement
+      options:
+        - label: I will not upload sensitive payroll data, SSNs, bank details, home addresses, tax IDs, or unredacted worker records in this public issue.
+          required: true
