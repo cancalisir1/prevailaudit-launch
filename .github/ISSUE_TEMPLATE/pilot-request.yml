@@ -1,0 +1,58 @@
+name: PrevailAudit paid-pilot request
+description: Request a first-project PrevailAudit payroll audit.
+title: "Paid-pilot request: "
+labels: ["paid-pilot-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for considering PrevailAudit. Do not include sensitive payroll data, Social Security numbers, bank details, home addresses, or unredacted worker records in this public issue.
+  - type: input
+    id: company
+    attributes:
+      label: Company
+      description: Legal or operating company name.
+      placeholder: Sample Contractor LLC
+    validations:
+      required: true
+  - type: input
+    id: contact-role
+    attributes:
+      label: Contact role
+      description: Your role in payroll, compliance, operations, or project administration.
+      placeholder: Controller
+    validations:
+      required: true
+  - type: input
+    id: project-trigger
+    attributes:
+      label: Project or award trigger
+      description: Project name, public award ID, agency, or payroll packet deadline.
+      placeholder: Bridge repair, VA roof replacement, or award ID
+    validations:
+      required: true
+  - type: dropdown
+    id: pilot-price
+    attributes:
+      label: Is the $299 first-project audit price acceptable?
+      options:
+        - Yes, if the fit is confirmed
+        - Need approval
+        - No
+    validations:
+      required: true
+  - type: textarea
+    id: packet-shape
+    attributes:
+      label: Payroll packet shape
+      description: List the file types you can provide after redaction.
+      placeholder: Payroll CSV, WH-347 PDF or CSV, wage determination, daily logs
+    validations:
+      required: true
+  - type: checkboxes
+    id: data-handling
+    attributes:
+      label: Data handling acknowledgement
+      options:
+        - label: I will not upload sensitive payroll data, SSNs, bank details, home addresses, or unredacted worker records in this public issue.
+          required: true
