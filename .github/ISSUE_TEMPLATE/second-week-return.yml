@@ -1,0 +1,73 @@
+name: PrevailAudit second-week return
+description: Report that a pilot or user returned with another payroll week.
+title: "Second-week return: "
+labels: ["second-week-return"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this to report repeat use after a first PrevailAudit audit. Do not include sensitive payroll data, Social Security numbers, bank details, home addresses, tax IDs, or unredacted worker records in this public issue.
+  - type: input
+    id: company
+    attributes:
+      label: Company
+      description: Legal or operating company name, or "redacted" if you prefer not to publish it.
+      placeholder: Sample Contractor LLC
+    validations:
+      required: true
+  - type: input
+    id: project
+    attributes:
+      label: Project or award trigger
+      description: Project name, public award ID, agency, or payroll packet deadline.
+      placeholder: Bridge repair, VA roof replacement, or award ID
+    validations:
+      required: true
+  - type: dropdown
+    id: return-context
+    attributes:
+      label: Return context
+      options:
+        - Same project, next payroll week
+        - Same project, later payroll week
+        - Different project
+        - Paid-pilot delivery follow-up
+    validations:
+      required: true
+  - type: dropdown
+    id: paid-status
+    attributes:
+      label: Payment status
+      options:
+        - Paid pilot
+        - Subscription customer
+        - Unpaid trial or evaluation
+        - Not sure yet
+    validations:
+      required: true
+  - type: dropdown
+    id: outcome
+    attributes:
+      label: What happened after the first audit?
+      options:
+        - Used again without prompting
+        - Asked for another report
+        - Avoided a submission issue
+        - Needs changes before reuse
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Repeat-use notes
+      description: Describe the workflow outcome without including sensitive worker, payroll, bank, or tax data.
+      placeholder: Returned with the next payroll week for the same project after using the first exception report.
+    validations:
+      required: true
+  - type: checkboxes
+    id: data-handling
+    attributes:
+      label: Data handling acknowledgement
+      options:
+        - label: I will not upload sensitive payroll data, SSNs, bank details, home addresses, tax IDs, or unredacted worker records in this public issue.
+          required: true
