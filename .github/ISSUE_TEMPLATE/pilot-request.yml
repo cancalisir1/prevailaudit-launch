@@ -41,6 +41,38 @@ body:
         - No
     validations:
       required: true
+  - type: dropdown
+    id: approval-timing
+    attributes:
+      label: How soon could the pilot be approved?
+      options:
+        - Ready this week
+        - 2-4 weeks
+        - Exploring only
+    validations:
+      required: true
+  - type: dropdown
+    id: payment-path
+    attributes:
+      label: Payment path
+      options:
+        - Card or invoice
+        - Purchase order
+        - Prime or customer approval
+        - Not sure yet
+    validations:
+      required: true
+  - type: dropdown
+    id: expansion-fit
+    attributes:
+      label: If the pilot is useful, what would fit next?
+      options:
+        - $149/mo subcontractor plan
+        - $499/mo prime oversight
+        - Pilot only
+        - Not sure yet
+    validations:
+      required: true
   - type: textarea
     id: packet-shape
     attributes:
