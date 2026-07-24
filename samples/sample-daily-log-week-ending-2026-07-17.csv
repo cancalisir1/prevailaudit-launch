@@ -1,0 +1,16 @@
+project,date,worker_id,worker_name,classification,hours_logged
+Sample Forest Bridge Repair,2026-07-13,W001,Alex Rivera,Laborer,8
+Sample Forest Bridge Repair,2026-07-14,W001,Alex Rivera,Laborer,9
+Sample Forest Bridge Repair,2026-07-15,W001,Alex Rivera,Laborer,9
+Sample Forest Bridge Repair,2026-07-16,W001,Alex Rivera,Laborer,9
+Sample Forest Bridge Repair,2026-07-17,W001,Alex Rivera,Laborer,9
+Sample Forest Bridge Repair,2026-07-13,W004,Taylor Brooks,Operating Engineer,8
+Sample Forest Bridge Repair,2026-07-14,W004,Taylor Brooks,Operating Engineer,9
+Sample Forest Bridge Repair,2026-07-15,W004,Taylor Brooks,Operating Engineer,9
+Sample Forest Bridge Repair,2026-07-16,W004,Taylor Brooks,Operating Engineer,10
+Sample Forest Bridge Repair,2026-07-17,W004,Taylor Brooks,Operating Engineer,10
+Sample Forest Bridge Repair,2026-07-13,W006,Casey Nguyen,Laborer,4
+Sample Forest Bridge Repair,2026-07-14,W006,Casey Nguyen,Laborer,4
+Sample Forest Bridge Repair,2026-07-15,W006,Casey Nguyen,Laborer,4
+Sample Forest Bridge Repair,2026-07-16,W006,Casey Nguyen,Laborer,4
+Sample Forest Bridge Repair,2026-07-17,W006,Casey Nguyen,Laborer,4

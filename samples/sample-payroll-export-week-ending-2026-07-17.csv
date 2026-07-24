@@ -1,0 +1,7 @@
+project,week_ending,worker_id,worker_name,classification,regular_hours,overtime_hours,base_rate,fringe_cash,fringe_benefit_credit,gross_wages,deductions,net_wages
+Sample Forest Bridge Repair,2026-07-17,W001,Alex Rivera,Laborer,40,4,27.90,10.00,0.00,1283.40,210.00,1073.40
+Sample Forest Bridge Repair,2026-07-17,W002,Morgan Lee,Electrician,38,0,42.10,18.50,0.00,1599.80,250.00,1349.80
+Sample Forest Bridge Repair,2026-07-17,W003,Sam Patel,Carpenter,40,0,37.35,15.00,0.00,1494.00,200.00,1294.00
+Sample Forest Bridge Repair,2026-07-17,W004,Taylor Brooks,Operator,46,0,39.20,16.80,0.00,1803.20,330.00,1473.20
+Sample Forest Bridge Repair,2026-07-17,W005,Jordan Kim,Truck Driver,32,0,31.60,15.00,0.00,1011.20,120.00,891.20
+Sample Forest Bridge Repair,2026-07-17,W006,Casey Nguyen,Laborer,20,0,28.40,14.25,0.00,568.00,80.00,488.00

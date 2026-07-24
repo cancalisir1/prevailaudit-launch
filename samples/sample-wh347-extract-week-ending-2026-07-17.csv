@@ -1,0 +1,7 @@
+project,week_ending,worker_id,worker_name,classification,total_hours,gross_wages,deductions,net_wages,statement_of_compliance_present,signed
+Sample Forest Bridge Repair,2026-07-17,W001,Alex Rivera,Laborer,44,1283.40,210.00,1073.40,true,true
+Sample Forest Bridge Repair,2026-07-17,W002,Morgan Lee,Electrician,38,1599.80,250.00,1349.80,true,true
+Sample Forest Bridge Repair,2026-07-17,W003,Sam Patel,Carpenter / Finish,40,1494.00,200.00,1294.00,true,true
+Sample Forest Bridge Repair,2026-07-17,W004,Taylor Brooks,Operating Engineer,46,1803.20,330.00,1473.20,false,false
+Sample Forest Bridge Repair,2026-07-17,W005,Jordan Kim,Truck Driver,32,1011.20,120.00,891.20,true,true
+Sample Forest Bridge Repair,2026-07-17,W007,Riley Stone,Laborer,8,227.20,30.00,197.20,true,true
