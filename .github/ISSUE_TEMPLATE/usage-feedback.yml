@@ -1,0 +1,62 @@
+name: PrevailAudit usage feedback
+description: Share audit-flow feedback or a repeat-usage signal.
+title: "Usage feedback: "
+labels: ["usage-feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for trying PrevailAudit. Do not include sensitive payroll data, Social Security numbers, bank details, home addresses, or unredacted worker records in this public issue.
+  - type: input
+    id: company
+    attributes:
+      label: Company
+      description: Legal or operating company name, or "redacted" if you prefer not to publish it.
+      placeholder: Sample Contractor LLC
+    validations:
+      required: true
+  - type: dropdown
+    id: usage-stage
+    attributes:
+      label: What did you use?
+      options:
+        - Synthetic sample audit
+        - Redacted CSV packet audit
+        - Exported CSV or report
+        - Paid-pilot delivery
+    validations:
+      required: true
+  - type: dropdown
+    id: reuse-intent
+    attributes:
+      label: Would you use this for another payroll week?
+      options:
+        - Yes, same project
+        - Yes, another project
+        - Maybe, if fixed
+        - No
+    validations:
+      required: true
+  - type: textarea
+    id: most-useful
+    attributes:
+      label: What was most useful?
+      description: Mention the report section, finding type, export, or workflow step that helped.
+      placeholder: The WH-347 mismatch report was useful before submission.
+    validations:
+      required: true
+  - type: textarea
+    id: missing-or-confusing
+    attributes:
+      label: What was missing or confusing?
+      description: Describe the issue without including sensitive worker or payroll data.
+      placeholder: I need a clearer wage determination mapping step.
+    validations:
+      required: true
+  - type: checkboxes
+    id: data-handling
+    attributes:
+      label: Data handling acknowledgement
+      options:
+        - label: I will not upload sensitive payroll data, SSNs, bank details, home addresses, or unredacted worker records in this public issue.
+          required: true
