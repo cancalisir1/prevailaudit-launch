@@ -1,0 +1,64 @@
+name: PrevailAudit qualified buyer evidence
+description: Record a buyer who has confirmed fit, urgency, and willingness to pay.
+title: "Qualified buyer: "
+labels: ["qualified-buyer"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this only for non-sensitive buyer qualification evidence. Do not include payroll files, worker names, Social Security numbers, bank details, tax IDs, home addresses, private emails, or unredacted customer records in this public issue.
+  - type: input
+    id: company
+    attributes:
+      label: Company
+      description: Legal or operating company name.
+      placeholder: Sample Contractor LLC
+    validations:
+      required: true
+  - type: dropdown
+    id: buyer-signal
+    attributes:
+      label: Buyer signal
+      options:
+        - Accepted $299 pilot price
+        - Requested invoice or card link
+        - Approved paid pilot internally
+        - Confirmed recurring-plan fit
+    validations:
+      required: true
+  - type: dropdown
+    id: approval-timing
+    attributes:
+      label: Approval timing
+      options:
+        - Ready this week
+        - 2-4 weeks
+        - Waiting on one approval step
+    validations:
+      required: true
+  - type: dropdown
+    id: expected-next-fit
+    attributes:
+      label: Expected next fit after pilot
+      options:
+        - $149/mo subcontractor plan
+        - $499/mo prime oversight
+        - Pilot only
+        - Not sure yet
+    validations:
+      required: true
+  - type: textarea
+    id: public-evidence
+    attributes:
+      label: Public evidence summary
+      description: Summarize the public-safe proof that this buyer is qualified.
+      placeholder: Buyer accepted the $299 pilot price and asked for invoice next steps for a public project.
+    validations:
+      required: true
+  - type: checkboxes
+    id: data-handling
+    attributes:
+      label: Data handling acknowledgement
+      options:
+        - label: I will not include sensitive payroll data, private contact details, payment details, tax IDs, or unredacted customer records in this public issue.
+          required: true

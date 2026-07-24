@@ -1,0 +1,72 @@
+name: PrevailAudit paid-pilot proof
+description: Record public-safe evidence that a first-project audit has been paid or authorized.
+title: "Paid pilot: "
+labels: ["paid-pilot"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this only after payment or written authorization exists. Do not include card numbers, bank details, tax IDs, invoice PDFs with private details, payroll files, worker names, Social Security numbers, home addresses, or unredacted customer records in this public issue.
+  - type: input
+    id: company
+    attributes:
+      label: Company
+      description: Legal or operating company name.
+      placeholder: Sample Contractor LLC
+    validations:
+      required: true
+  - type: input
+    id: project-trigger
+    attributes:
+      label: Project or award trigger
+      description: Public-safe project name, public award ID, agency, or payroll packet deadline.
+      placeholder: Bridge repair, VA roof replacement, or public award ID
+    validations:
+      required: true
+  - type: dropdown
+    id: proof-type
+    attributes:
+      label: Paid-pilot proof type
+      options:
+        - Paid processor receipt exists
+        - Paid invoice exists
+        - Written authorization exists
+        - Purchase order approved
+    validations:
+      required: true
+  - type: dropdown
+    id: pilot-scope
+    attributes:
+      label: Pilot scope
+      options:
+        - One project and one payroll week
+        - One project and multiple payroll weeks
+        - Prime/subcontractor packet review
+    validations:
+      required: true
+  - type: dropdown
+    id: follow-on-plan
+    attributes:
+      label: Follow-on plan
+      options:
+        - $149/mo subcontractor plan likely
+        - $499/mo prime oversight likely
+        - Repeat paid pilot likely
+        - No follow-on discussed yet
+    validations:
+      required: true
+  - type: textarea
+    id: public-proof-notes
+    attributes:
+      label: Public proof notes
+      description: Summarize proof without publishing private payment, invoice, payroll, or contact details.
+      placeholder: Paid invoice exists for the $299 first-project audit; private receipt retained in the evidence ledger.
+    validations:
+      required: true
+  - type: checkboxes
+    id: data-handling
+    attributes:
+      label: Data handling acknowledgement
+      options:
+        - label: I will not include sensitive payroll data, private contact details, payment details, tax IDs, or unredacted customer records in this public issue.
+          required: true
